@@ -1,0 +1,70 @@
+$Color1: #19191f;
+$MedidaEnlaceGlobal: 50px; 
+$Colores: #158df0, #f00, #0f0;
+$Fila:1,2,3; //filas que tenemos
+
+
+/*
+$-> Es el caracter para indicar a sass que se declarara una variable
+$******-> En los asteriscos se escribira el nombre de la variable:
+    Caracteristicas de las variable: 
+        1.-No deben iniciar con numbero.
+        2.-Son Casesensitive.
+        3.-No puede ser solo un numbero (Tiene que se alfanumerica).
+        4.-No puede haber dos variables con exactamente el mismo nombre."
+        5.-No puede haber espacio entre las variables, si se desea aplicar espaciado se tiene 
+        que remplazar por un "_".
+    
+$Color: -> Los dos puntos hacen referencia a que la variable sera inicializada.
+Una lista -> Es una variable que puede guardar varios valores
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: $Color1;
+  flex-direction: column;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+
+    & li {
+        list-style: none;
+
+        & a {
+            display: block;
+            width: $MedidaEnlaceGlobal;
+            height: $MedidaEnlaceGlobal;
+            background:$Color1;
+            text-align: center;
+            line-height: $MedidaEnlaceGlobal; //Centrar verticalmente
+            margin:  0 10px;
+            border-radius: 15px;
+            box-shadow: -2px -2px 3px rgba(255,255, 255,0.05), 3px 3px 3px rgba(0,0,0,0.2);
+
+            & .fa{
+                font-size: 22px;
+                color: #555555;  
+            }
+        }
+    }
+
+    @each $ValorFila in $Fila { //each repite codigo por cada valor que se encuentra en una lista
+    &:nth-child(#{$ValorFila}) li a:hover .fa{
+        color: nth($Colores, $ValorFila);
+        text-shadow: 0 0 15px nth($Colores , $ValorFila);
+        }
+    }
+}
+

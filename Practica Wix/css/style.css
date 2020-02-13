@@ -1,0 +1,621 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Encabezado {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.Encabezado .logo {
+  width: 25%;
+  height: 15vh;
+  background: #edcd1f;
+  display: flex;
+}
+.Encabezado .logo img {
+  width: 24%;
+  height: 70px;
+  margin: 15px 25px;
+}
+.Encabezado .logo #Esfera {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: -7%;
+  margin-top: 10%;
+}
+.Encabezado .logo #Construcciones {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: -26%;
+  margin-top: 17%;
+}
+.Encabezado .menu {
+  width: 75%;
+  height: 15vh;
+  background: rgba(3, 3, 100, 0.849);
+}
+.Encabezado .menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  line-height: 110px;
+  list-style: none;
+  width: 80%;
+  margin-left: 16%;
+}
+.Encabezado .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.Textoenfente {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  top: -600px;
+  left: 20%;
+}
+.Textoenfente .Texto {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 10px;
+}
+.Textoenfente .fa {
+  color: #fff;
+  font-size: 70px;
+  top: -600px;
+  margin-left: 45%;
+}
+
+#Servicios {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-top: -20%;
+}
+#Servicios #Titulo {
+  width: 100%;
+  height: 100vh;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+#Servicios #linea {
+  width: 10%;
+  height: 1%;
+  background: #EDCD1F;
+  margin-left: 44%;
+  margin-top: -50%;
+}
+#Servicios .galeria {
+  display: flex;
+  width: 100%/3;
+  margin: 3%;
+}
+#Servicios .galeria .Parrafo {
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 10%;
+  background: lightgrey;
+}
+#Servicios .galeria .Parrafo img {
+  width: 100%;
+  height: 30vh;
+}
+#Servicios .galeria h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #05053a;
+  background: lightgrey;
+  padding: 10px;
+  width: 50%;
+}
+#Servicios .galeria .Lorem {
+  background: lightgrey;
+  text-align: justify;
+  margin: 15px 15px;
+  margin-top: -1%;
+  width: 90%;
+  height: 10%;
+}
+
+#Nosotros {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#Nosotros .cuadro1 {
+  width: 50%;
+  height: 100%;
+  background: lightgrey;
+}
+#Nosotros #Titulo2 {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  margin-left: -180px;
+  line-height: 100px;
+}
+#Nosotros #linea2 {
+  width: 15%;
+  height: 1%;
+  background: #edcd1f;
+  margin-top: -20px;
+  margin-left: 90px;
+}
+#Nosotros #Parrafo3 {
+  width: 80%;
+  height: 60%;
+  margin: 50px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: bold;
+  margin-left: 13%;
+}
+#Nosotros #Hombresconstuyendo {
+  width: 50%;
+  height: 100vh;
+}
+#Nosotros #Hombresconstuyendo img {
+  width: 100%;
+  height: 100vh;
+}
+
+.Trayectoria {
+  background: #edcd1f;
+  width: 100%;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+}
+.Trayectoria .menus .division {
+  display: flex;
+  justify-content: space-around;
+}
+.Trayectoria .menus .division .numeros {
+  color: #fff;
+  font-size: 3em;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-left: -1%;
+}
+.Trayectoria .menus .division2 {
+  display: flex;
+  justify-content: space-around;
+}
+.Trayectoria .menus .division2 .Recibimientos2 {
+  color: rgba(112, 108, 108, 0.966);
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 5%;
+  margin-top: -3%;
+}
+.Trayectoria .menus .division2 .lineavertical {
+  width: 10%;
+  height: 10%;
+  color: yellow;
+  background: #000;
+}
+
+#Proyectos {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+#Proyectos #Proyectos1 {
+  width: 100%;
+  height: 100vh;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  margin-top: -1%;
+  padding: 30px;
+}
+#Proyectos #linea3 {
+  width: 10%;
+  height: 1%;
+  background: #EDCD1F;
+  margin-left: 44%;
+  margin-top: -50%;
+}
+#Proyectos .Galeriaanimada {
+  width: 100%;
+  height: 100vh;
+}
+#Proyectos .Galeriaanimada .imagenes {
+  display: flex;
+  justify-content: center;
+  margin: 30px 30px;
+}
+#Proyectos .Galeriaanimada .imagenes .img1 {
+  position: relative;
+  margin: 0 10px;
+}
+#Proyectos .Galeriaanimada .imagenes .img1:hover {
+  opacity: 0.5;
+  transition: 1 s;
+}
+#Proyectos .Galeriaanimada .imagenes .img1 .img1::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#Proyectos .Galeriaanimada .imagenes .img1 span {
+  position: absolute;
+  font-size: 20px;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30%;
+  transform: translateY(-50%);
+}
+#Proyectos .Galeriaanimada .imagenes .img1 img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  opacity: 1;
+}
+#Proyectos .Clientes {
+  background: #ccc;
+  height: 50%;
+}
+#Proyectos .Clientes #Clientes1 {
+  width: 100%;
+  height: 100vh;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+#Proyectos .Clientes #linea4 {
+  width: 10%;
+  height: 1%;
+  background: #EDCD1F;
+  margin-left: 44%;
+  margin-top: -50%;
+}
+#Proyectos .Clientes .Marcas {
+  display: flex;
+  margin: 40px 40px;
+}
+#Proyectos .Clientes .Marcas .listas {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#Proyectos .Clientes .Marcas .listas li {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+#Proyectos .Clientes .Marcas .listas #Tipox {
+  color: #000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+#Proyectos .Clientes .Marcas .listas #Tipox:hover {
+  color: #edcd1f;
+}
+#Proyectos .Clientes .Marcas .listas #Excipia {
+  color: #000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+#Proyectos .Clientes .Marcas .listas #Excipia:hover {
+  color: green;
+}
+#Proyectos .Clientes .Marcas .listas #Vide {
+  color: #000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+#Proyectos .Clientes .Marcas .listas #Vide:hover {
+  color: blue;
+}
+#Proyectos .Clientes .Marcas .listas #DeHotel {
+  color: #000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+#Proyectos .Clientes .Marcas .listas #DeHotel:hover {
+  color: purple;
+}
+#Proyectos .Clientes .Marcas .listas #Umber {
+  color: #000;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+#Proyectos .Clientes .Marcas .listas #Umber:hover {
+  color: #edcd1f;
+}
+#Proyectos #Contacto {
+  background: #fff;
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#Proyectos #Contacto #Titulo5 {
+  width: 100%;
+  height: 100vh;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+#Proyectos #Contacto #linea5 {
+  width: 10%;
+  height: 1%;
+  background: #EDCD1F;
+  margin-left: 44%;
+  margin-top: -50%;
+}
+#Proyectos #Contacto #mapa {
+  width: 70%;
+  height: 100%;
+  margin: 5px;
+}
+#Proyectos #Contacto #mapa iframe {
+  width: 110%;
+  height: 70%;
+  margin-left: 13%;
+  margin-top: 15px;
+}
+#Proyectos .formulario {
+  display: flex;
+}
+#Proyectos .formulario .preguntas {
+  width: 50%;
+  height: 30%;
+  margin: 0% 10%;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+#Proyectos .formulario form .input1 {
+  width: 100%;
+  height: 30px;
+  background: lightgrey;
+  font-size: 15px;
+  margin: 2px;
+  padding: 2px;
+}
+#Proyectos .formulario form #input2 {
+  width: 100%;
+  height: 100px;
+  background: lightgrey;
+  font-size: 15px;
+  margin: 1px;
+  padding: 2px;
+}
+#Proyectos .formulario a {
+  width: 20px;
+  height: 60px;
+}
+#Proyectos .formulario a #bottom {
+  background: rgba(1, 1, 27, 0.849);
+  color: #fff;
+  font-size: 15px;
+  border: 2px solid rgba(1, 1, 27, 0.849);
+  margin-left: 88%;
+}
+#Proyectos .formulario .oficinaprincipal {
+  width: 50%;
+  height: 100%;
+  margin: 10px 10%;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+#Proyectos .formulario .oficinaprincipal #Formasdecontacto {
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 0px 0px;
+}
+#Proyectos .formulario .oficinaprincipal .Contacto2 {
+  font-family: sans-serif;
+  font-size: 17px;
+}
+#Proyectos .formulario .oficinaprincipal #linea7 {
+  width: 10%;
+  height: 2%;
+  background: #edcd1f;
+  margin-top: -10%;
+}
+#Proyectos .formulario .oficinaprincipal #telefono {
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 0px 0px;
+  color: rgba(1, 1, 27, 0.849);
+  margin-top: 10px;
+}
+#Proyectos .formulario .oficinaprincipal #Presupuesto {
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 0px 0px;
+  color: rgba(1, 1, 27, 0.849);
+  margin-top: 40px;
+}
+#Proyectos .piedepagina {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 15vh;
+}
+#Proyectos .piedepagina .creditos {
+  width: 55%;
+  height: 15vh;
+}
+#Proyectos .piedepagina .creditos .fa {
+  text-align: left;
+  font-size: 20px;
+  line-height: 150px;
+  margin-left: 15%;
+}
+#Proyectos .piedepagina .iconos {
+  width: 10%;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 110px;
+  margin-left: 20%;
+}
+#Proyectos .piedepagina .iconos a {
+  display: block;
+  width: 10px;
+  height: 100px;
+  margin: 20px 20px;
+}
+#Proyectos .piedepagina .iconos .fa {
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  background: #ccc;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+
+.Titulos {
+  padding: 1px;
+  width: 100%;
+  height: 200px;
+  background: #ddd;
+}
+.Titulos h1 {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: left;
+  line-height: 50px;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.Titulos #lineasamarillas {
+  width: 9%;
+  height: 5%;
+  background: #edcd1f;
+  margin-left: 5%;
+}
+
+.textoimg {
+  display: flex;
+  height: 50%;
+  position: relative;
+}
+.textoimg #textopar {
+  width: 100%;
+  margin: 20px;
+  padding: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.textoimg #button {
+  background: #000;
+  color: #edcd1f;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 2px solid #000;
+}
+.textoimg .slider {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+.textoimg .slider ul {
+  display: flex;
+  padding: 20px;
+  width: 400%;
+  height: 50%;
+  animation: slide 10s linear infinite alternate;
+}
+.textoimg .slider li {
+  width: 300%;
+  list-style: none;
+}
+.textoimg .slider img {
+  width: 91%;
+  height: 60%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

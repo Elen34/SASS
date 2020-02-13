@@ -1,0 +1,72 @@
+@use './Mixins.scss' as Mix;
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @include Mix.margen-relleno;
+  }
+  
+  .Encabezado {
+    width: $ancho;
+    height: $altura;
+    display: flex;
+    position: sticky;
+    top: 0;
+  
+    & .logo {
+      width: 25%;
+      height: $altura;
+      background: $Fondo;
+      display: flex;
+  
+      & img {
+        width: $anchoimg;
+        height: $alturaimg;
+        margin: 15px 25px;
+      }
+  
+      & #Esfera {
+        font-size: $tamañoletra;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-left: -7%;
+        margin-top: 10%;
+      }
+  
+      & #Construcciones {
+        font-family: sans-serif;
+        font-size: $tamañoletra;
+        text-transform: uppercase;
+        margin-left: 200%;
+        margin-top: 17%;
+      }
+    }
+  
+    & .menu {
+      width: 75%;
+      height: $altura;
+      background: rgba(3, 3, 100, 0.849);
+  
+      & ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        line-height: 110px;
+        list-style: none;
+        width: 80%;
+        margin-left: 16%;
+  
+        & li a {
+          color: $colorletra;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+ 

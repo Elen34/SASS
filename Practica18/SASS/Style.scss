@@ -1,0 +1,64 @@
+$Medidabefore:6px;
+$Medidaafter:1px;
+$bordercuadro:50%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.loader{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background:linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+    border-radius: $bordercuadro;
+    animation: animate 2s linear infinite;
+
+    &:before{
+        content: '';
+        position: absolute;
+        background: #000;
+        top:$Medidabefore;
+        left: $Medidabefore;
+        right: $Medidabefore;
+        bottom: $Medidabefore;
+        border-radius: $bordercuadro;
+        z-index: 3;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        top:$Medidaafter;
+        left: $Medidaafter;
+        right: $Medidaafter;
+        bottom: $Medidaafter;
+        background:linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+        border-radius: $bordercuadro;
+        z-index: 1;
+        filter: blur(10px);
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg); 
+    }
+
+    100%{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg); //Matiz de colores para que cuando gire coloque varios 
+        //colores entre mas grados mas colores entre menos grados menos colores 
+    }
+}

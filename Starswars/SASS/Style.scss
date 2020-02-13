@@ -1,0 +1,83 @@
+@use './Mixins' as Mix;
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+ul{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+
+    & li {
+        position: relative;
+        list-style: none;
+        height: 300px;
+        width: 10px;
+        margin: 0 10px;
+        //background: #fff;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background: #262626;
+            top: -30px;
+
+            border-top: {
+                left-radius:2px;
+                right-radius:2px;
+            }
+
+            //border-top-left-radius: 2px; //Se curvea la esquina
+            //border-top-right-radius: 2px;
+        }  
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background: #262626;
+            bottom: -30px;
+            border-bottom: {
+             left-radius:2px;
+             right-radius:2px;
+            }   
+       }
+
+       &:nth-child(1){
+           @include Mix.background-sables(#ffd0d0, #f00);
+       }
+
+       &:nth-child(2){
+           @include Mix.background-sables(#ffffd7, #ff0);
+       }
+       
+       &:nth-child(3){
+           @include Mix.background-sables(#bffbbf, #0f0);
+        }
+
+       &:nth-child(4){
+           @include Mix.background-sables(#acffff, #00f);
+        }
+
+        &:nth-child(5){
+           @include Mix.background-sables(#bebeff, #f0f);
+        }
+       
+       &:hover{
+        background: #9b9b9b;
+        box-shadow: none;
+        }
+  
+    }      
+}
+

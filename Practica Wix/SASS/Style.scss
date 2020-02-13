@@ -1,0 +1,647 @@
+@use './Mixins.scss'as Mix;
+
+$ancho: 100%;
+$altura: 15vh;
+$alturaimg: 70px;
+$anchoimg: 100px;
+$tamañoletra: 20px;
+$colorletra: #fff;
+$anchoimg: 24%;
+$Fondo: #edcd1f;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include Mix.margen-relleno;
+}
+
+.Encabezado {
+  width: $ancho;
+  height: $altura;
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+
+  & .logo {
+    width: 25%;
+    height: $altura;
+    background: $Fondo;
+    display: flex;
+
+    & img {
+      width: $anchoimg;
+      height: $alturaimg;
+      margin: 15px 25px;
+    }
+
+    & #Esfera {
+      font-size: $tamañoletra;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin-left: -7%;
+      margin-top: 10%;
+    }
+
+    & #Construcciones {
+      font-family: sans-serif;
+      font-size: $tamañoletra;
+      text-transform: uppercase;
+      margin-left: -26%;
+      margin-top: 17%;
+    }
+  }
+
+  & .menu {
+    width: 75%;
+    height: $altura;
+    background: rgba(3, 3, 100, 0.849);
+
+    & ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      line-height: 110px;
+      list-style: none;
+      width: 80%;
+      margin-left: 16%;
+
+      & li a {
+        color: $colorletra;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.container {
+  @include Mix.ancho-altura;
+  
+}
+
+.Textoenfente {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  top: -600px;
+  left: 20%;
+
+  & .Texto {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: $colorletra;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 10px;
+  }
+
+  & .fa {
+    color: $colorletra;
+    font-size: 70px;
+    top: -600px;
+    margin-left: 45%;
+  }
+}
+
+#Servicios {
+  background: $colorletra;
+  @include Mix.ancho-altura;
+  @include Mix.margen-relleno; 
+  margin-top: -20%;
+
+  & #Titulo {
+    @include Mix.h1;
+  }
+
+  & #linea {
+    @include Mix.Lineaamarilla;
+  }
+
+  & .galeria {
+    display: flex;
+    width: 100%/3;
+    margin: 3%;
+
+    & .Parrafo {
+      @include Mix.Parrafo2;
+
+      & img {
+        @include Mix.img;
+      }
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      color: rgb(5, 5, 58);
+      background: lightgrey;
+      padding: 10px;
+      width: 50%;
+    }
+
+    .Lorem {
+      background: lightgrey;
+      text-align: justify;
+      margin: 15px 15px;
+      margin-top: -1%;
+      width: 90%;
+      height: 10%;
+    }
+  }
+}
+
+#Nosotros {
+  background: #fff;
+  @include Mix.ancho-altura;
+  @include Mix.margen-relleno;
+  display: flex;
+
+  & .cuadro1 {
+    width: 50%;
+    height: 100%;
+    background: lightgrey;
+  }
+
+  & #Titulo2 {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    margin-left: -180px;
+    line-height: 100px;
+  }
+
+  & #linea2 {
+    width: 15%;
+    height: 1%;
+    background: $Fondo;
+    margin-top: -20px;
+    margin-left: 90px;
+  }
+
+  & #Parrafo3 {
+    width: 80%;
+    height: 60%;
+    margin: 50px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: bold;
+    margin-left: 13%;
+  }
+
+  & #Hombresconstuyendo {
+    width: 50%;
+    height: 100vh;
+
+    & img {
+      @include Mix.ancho-altura;
+    }
+  }
+}
+
+.Trayectoria {
+  background: $Fondo;
+  width: $ancho;
+  height: 30vh;
+  @include Mix.margen-relleno;
+
+  & .menus {
+    & .division {
+      display: flex;
+      justify-content: space-around;
+      // width: $ancho/7;
+      // height: $altura/3;
+      // text-align: center;
+
+      & .numeros {
+        @include Mix.Recibimientos;
+      }
+    }
+
+    & .division2 {
+      display: flex;
+      justify-content: space-around;
+
+      & .Recibimientos2 {
+        @include Mix.Recibimientos3;
+      }
+
+      & .lineavertical {
+        @include Mix.Lineavertical;
+      }
+    }
+  }
+}
+
+#Proyectos {
+  @include Mix.ancho-altura;
+  background: #fff;
+
+  & #Proyectos1 {
+    @include Mix.h1;
+    margin-top: -1%;
+    padding: 30px;
+  }
+
+  & #linea3 {
+    @include Mix.Lineaamarilla;
+  }
+
+  & .Galeriaanimada {
+    @include Mix.ancho-altura;
+
+    & .imagenes {
+      display: flex;
+      justify-content: center;
+      margin: 30px 30px;
+
+      & .img1 {
+        position: relative;
+        margin: (0 10px);
+
+        &:hover {
+          opacity: 0.5;
+          transition: 1 s;
+        }
+
+        & .img1::after {
+          content: "";
+          top: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+        }
+
+        & span {
+          position: absolute;
+          @include Mix.Contenido;
+        }
+
+        & img {
+          width: 300px;
+          height: 300px;
+          display: block;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .Clientes {
+    background: #ccc;
+    height: 50%;
+
+    & #Clientes1 {
+      @include Mix.h1;
+    }
+
+    & #linea4 {
+      @include Mix.Lineaamarilla;
+    }
+
+    & .Marcas {
+      display: flex;
+      margin: 40px 40px;
+
+      & .listas {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+        & li {
+          color: #000;
+          font-family: sans-serif;
+          font-size: 200%;
+          text-transform: uppercase;
+        }
+
+        & #Tipox {
+          color: #000;
+          font-family: sans-serif;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $Fondo;
+          }
+        }
+        & #Excipia {
+          color: #000;
+          font-family: sans-serif;
+          text-transform: uppercase;
+
+          &:hover {
+            color: green;
+          }
+        }
+
+        & #Vide {
+          color: #000;
+          font-family: sans-serif;
+          text-transform: uppercase;
+
+          &:hover {
+            color: blue;
+          }
+        }
+
+        & #DeHotel {
+          color: #000;
+          font-family: sans-serif;
+          text-transform: uppercase;
+
+          &:hover {
+            color: purple;
+          }
+        }
+
+        & #Umber {
+          color: #000;
+          font-family: sans-serif;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $Fondo;
+          }
+        }
+      }
+    }
+  }
+
+  #Contacto {
+    background: $colorletra;
+    width: 100%;
+    height: 70%;
+    @include Mix.margen-relleno;
+    position: relative;
+
+    & #Titulo5 {
+      @include Mix.h1;
+    }
+
+    & #linea5 {
+      @include Mix.Lineaamarilla;
+    }
+
+    & #mapa {
+      width: 70%;
+      height: 100%;
+      margin: 5px;
+
+      & iframe {
+        width: 110%;
+        height: 70%;
+        margin-left: 13%;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .formulario {
+    display: flex;
+
+    .preguntas {
+      width: 50%;
+      height: 30%;
+      margin: 0% 10%;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    form {
+      & .input1 {
+        width: 100%;
+        height: 30px;
+        background: lightgrey;
+        font-size: 15px;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      & #input2 {
+        width: 100%;
+        height: 100px;
+        background: lightgrey;
+        font-size: 15px;
+        margin: 1px;
+        padding: 2px;
+      }
+    }
+
+    & a {
+      width: 20px;
+      height: 60px;
+
+      & #bottom {
+        background: rgba(1, 1, 27, 0.849);
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgba(1, 1, 27, 0.849);
+        margin-left: 88%;
+      }
+    }
+
+    .oficinaprincipal {
+      width: 50%;
+      height: 100%;
+      margin: 10px 10%;
+      font-family: sans-serif;
+      font-size: 15px;
+
+      & #Formasdecontacto {
+        font-family: sans-serif;
+        font-size: 17px;
+        margin: 0px 0px;
+      }
+
+      & .Contacto2 {
+        font-family: sans-serif;
+        font-size: 17px;
+      }
+
+      & #linea7 {
+        width: 10%;
+        height: 2%;
+        background:$Fondo;
+        margin-top: -10%;
+      }
+
+      & #telefono {
+        font-size: 25px;
+        font-family: sans-serif;
+        margin: 0px 0px;
+        color: rgba(1, 1, 27, 0.849);
+        margin-top: 10px;
+      }
+
+      & #Presupuesto {
+        font-size: 25px;
+        font-family: sans-serif;
+        margin: 0px 0px;
+        color: rgba(1, 1, 27, 0.849);
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .piedepagina {
+    @include Mix.margen-relleno;
+    display: flex;
+    height: 15vh;
+
+
+    & .creditos {
+      width: 55%;
+      height: 15vh;
+
+
+      & .fa {
+        text-align: left;
+        font-size: 20px;
+        line-height: 150px;
+        margin-left: 15%;
+      }
+    }
+
+    .iconos {
+      width: 10%;
+      display: flex;
+      justify-content: flex-start;
+      line-height: 110px;
+      margin-left: 20%;
+
+      & a {
+        display: block;
+        width: 10px;
+        height: 100px;
+        margin: 20px 20px;
+      }
+
+      & .fa {
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+        border-radius: 30px;
+        background: #ccc;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.Titulos {
+  padding: 1px;
+  width: 100%;
+  height: 200px;
+  background: #ddd;
+
+  h1 {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: left;
+    line-height: 50px;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+
+  & #lineasamarillas {
+    width: 9%;
+    height: 5%;
+    background: $Fondo;
+    margin-left: 5%;
+  }
+}
+
+.textoimg {
+  display: flex;
+  height: 50%;
+  position: relative;
+
+  & #textopar {
+    width: $ancho;
+    //height: $altura;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+
+  & #button {
+    background: #000;
+    color: $Fondo;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+    border: 2px solid #000;
+
+
+    &:hover{
+      background: $Fondo;
+    }
+  }
+
+  & .slider {
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    & ul {
+      display: flex;
+      padding: 20px;
+      width: 400%;
+      height: 50%;
+      animation: slide 10s linear infinite alternate;
+    }
+    & li {
+      width: 300%;
+      list-style: none;
+    }
+
+    & img {
+      width: 91%;
+      height: 60%;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  } // la imagen se va a mantener
+  20% {
+    margin-left: 0%;
+  } //Se mantenga la imagen el ese lugar
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
